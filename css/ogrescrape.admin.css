@@ -1,9 +1,9 @@
-.ogrefetch-success {
+.og-rescrape-success {
 	color: #4F8A10;
 	font-weight: 600;
 }
 
-.ogrefetch-failed {
+.og-rescrape-failed {
 	color: #D8000C;
 	font-weight: 600;
 }

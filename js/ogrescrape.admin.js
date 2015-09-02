@@ -30,15 +30,15 @@
 
 				})
 				.done(function(response) {
-					_this.text(settings.textSuccess).addClass('ogrefetch-success');
+					_this.text(settings.textSuccess).addClass('og-rescrape-success');
 					setTimeout(function() {
-						_this.text(settings.textNormal).removeClass('ogrefetch-success');
+						_this.text(settings.textNormal).removeClass('og-rescrape-success');
 					}, 2000);
 				})
 				.fail(function(response) {
-					_this.text(settings.textFail).addClass('ogrefetch-fail');
+					_this.text(settings.textFail).addClass('og-rescrape-fail');
 					setTimeout(function() {
-						_this.text(settings.textNormal).removeClass('ogrefetch-fail');
+						_this.text(settings.textNormal).removeClass('og-rescrape-fail');
 					}, 2000);
 				})
 				.always(function(response) {
