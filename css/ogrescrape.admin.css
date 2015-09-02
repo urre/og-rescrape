@@ -1,0 +1,9 @@
+.ogrefetch-success {
+	color: #4F8A10 !important;
+	font-weight: 600 !important;
+}
+
+.ogrefetch-failed {
+	color: #D8000C !important;
+	font-weight: 600 !important;
+}
