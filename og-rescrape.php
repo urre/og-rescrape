@@ -2,7 +2,7 @@
 /*
 * Plugin Name: Open Graph Rescrape
 * Plugin URI: http://github.com/urre/ogrescrape
-* Description: 
+* Description: This plugin programatically forces a Open Graph rescrape. Just click the button in wp-admin.
 * Version: 0.1.0
 * Author: Urban Sanden
 * Author URI: http://urre.me
@@ -80,12 +80,12 @@ class Ogrescrape {
     }
 
     public function register_admin_styles() {
-        wp_enqueue_style( 'ogrescrape-plugin-styles', OGRESCRAPE_PLUGIN_URL . 'css/ogrescrape.admin.css' );
+        wp_enqueue_style( 'ogrescrape-plugin-styles', OGRESCRAPE_PLUGIN_URL . 'css/og-rescrape.admin.css' );
     }
 
     public function register_admin_scripts($hook) {
 
-        wp_enqueue_script( 'ogrescrape-admin-script', OGRESCRAPE_PLUGIN_URL . 'js/ogrescrape.admin.js', array('jquery') );
+        wp_enqueue_script( 'ogrescrape-admin-script', OGRESCRAPE_PLUGIN_URL . 'js/og-rescrape.admin.js', array('jquery') );
 
         # Localized strings exposed to Javascript
         wp_localize_script( 'ogrescrape-admin-script', 'langstrings', array(
