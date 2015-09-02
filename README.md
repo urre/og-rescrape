@@ -2,7 +2,8 @@
 
 When you share a post/page on Facebook, it scrapes the url for the Open Graph Data to determine what image/video/content to display. Facebook caches to image for you so if you need to change it, the old image will still be displayed. Probably not what you want to do. You can manually go to the [](https://developers.facebook.com/tools/debug/) and click "Fetch new scrape information", but this might be time consuming.
 
-This plugin programatically forces a rescrape.
+
+This plugin programatically forces a rescrape. Click the button in wp-admin.
 
 ## Install from [WordPress Plugin directory](https://wordpress.org/plugins/ogrescrape/)
 1. Install plugin from the WordPress Plugin directory (coming soon..)
@@ -29,6 +30,10 @@ This plugin programatically forces a rescrape.
 OG Rescrape is available in:
 
 + English
+
+## Todo
+- [ ] Add spinner inside button
+- [ ] Show link to Linter
 
 ## Changelog
 + 0.1.0: First version in repo
