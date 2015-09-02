@@ -10,7 +10,7 @@ This plugin programatically forces a rescrape. Just click the button in wp-admin
 1. Install plugin from the WordPress Plugin directory (coming soon..)
 
 ## Install via [WordPress Packagist](http://wpackagist.org/)
-1. Add ``"wpackagist-plugin/ogrescrape": "*"`` to your composer.json
+1. Add ``"wpackagist-plugin/og-rescrape": "*"`` to your composer.json
 3. Run ``composer.phar update``
 4. OG Rescrape are installed to ``wp-content/plugins/``
 
@@ -19,8 +19,8 @@ This plugin programatically forces a rescrape. Just click the button in wp-admin
 	composer require urre/ogrescrape
 
 ## Install manually
-1. Download [zip](https://github.com/urre/ogrescrape/archive/master.zip) and extract
-2. Rename the folder from `ogrescrape-master` to `ogrescrape`
+1. Download [zip](https://github.com/urre/og-rescrape/archive/master.zip) and extract
+2. Rename the folder from `og-rescrape-master` to `og-rescrape`
 3. Upload the plugin to your plugins directory
 4. Activate the plugin
 
