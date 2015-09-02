@@ -2,7 +2,7 @@
   "name": "urre/ogrescrape",
   "type": "wordpress-plugin",
   "licence": "MIT",
-  "description": "A simple WordPress plugin that lets you programatically forcee a Open Grapch rescrape clicking a button.",
+  "description": "A simple WordPress plugin that lets you programatically force a Open Graph rescrape clicking a button.",
   "homepage": "https://github.com/urre/ogrescrape",
   "authors": [
     {
