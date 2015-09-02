@@ -5,12 +5,13 @@
 	$(function () {
 
 		// Some basic settings
-		settings: {
+		var settings = {
 			url: $('#sample-permalink').text(),
 			textNormal: 'Rescrape Open Graph data',
 			textSuccess: 'Success!',
 			textFailed: 'Failed!'
-		}
+		};
+
 		// Add button
 		$('#edit-slug-box').append('<a class="button button-small button-rescrape">'+settings.textNormal+'</a>');
 
@@ -21,7 +22,7 @@
 			var jqxhr = $.post(
 				'https://graph.facebook.com',
 				{
-					id: url,
+					id: settings.url,
 					scrape: true
 				},
 				function(response) {
