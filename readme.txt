@@ -1,4 +1,4 @@
-===  ===
+=== Open Graph Rescrape===
 Contributors: urre
 Donate link: hej@urre.me
 Tags: publish, open graph, rescrape, refetch, data, metadata, facebook
@@ -6,31 +6,25 @@ Requires at least: 3.0
 Tested up to: 4.3.0
 Stable tag: 0.1.0
 
-Facebooks not clearing Open Graph cache for your post/page? 
+Is Facebook still not updating the Open Graph data for your post/page?
 
 == Description ==
 
-When you share a post/page on Facebook, it scrapes the url for the Open Graph Data to determine what image/video/content to display. Facebook caches to image for you so if you need to change it, the old image will still be displayded. Probably not what you want to do.
+When you share a post/page on Facebook, it scrapes the url for the Open Graph Data to determine what image/video/content to display. Facebook caches to image for you so if you need to change it, the old image will still be displayed. Probably not what you want to do. You can manually go to the Facebook Debug Tool and click "Fetch new scrape information", but this might be time consuming.
 
-This plugin programatically forces a rescrape.
+This plugin programatically forces a rescrape. Just click the button in wp-admin.
 
-You can also use the debugger forces Facebook to rescrape the URL, so that should bust the cache. 
-
-* [Github](https://github.com/urre/rescrape)
+* [Github](https://github.com/urre/og-rescrape)
 
 == Installation ==
 
-1. Upload the `rescrape` folder to your `/wp-content/plugins/` directory
-2. Activate the "rescrape" plugin in your WordPress administration interface
+1. Upload the `og-rescrape` folder to your `/wp-content/plugins/` directory
+2. Activate the "og-rescrape" plugin in your WordPress administration interface
 3. Done!
 
 == Feedback ==
 
 Contact me at hej@urre.me or at https://twitter.com/urre and hopefully I can do something about it.
-
-== Screenshots ==
-
-1. rescrape
 
 == Frequently Asked Questions ==
 
