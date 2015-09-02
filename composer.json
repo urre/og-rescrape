@@ -1,9 +1,9 @@
 {
-  "name": "urre/ogrescrape",
+  "name": "urre/og-rescrape",
   "type": "wordpress-plugin",
   "licence": "MIT",
-  "description": "A simple WordPress plugin that lets you programatically force a Open Graph rescrape clicking a button.",
-  "homepage": "https://github.com/urre/ogrescrape",
+  "description": "A simple WordPress plugin that lets you programatically force a Open Graph rescrape by clicking a button.",
+  "homepage": "https://github.com/urre/og-rescrape",
   "authors": [
     {
       "name": "Urban Sanden",
@@ -16,7 +16,7 @@
     "plugin"
   ],
   "support": {
-    "issues": "https://github.com/urre/ogrescrape/issues"
+    "issues": "https://github.com/urre/og-rescrape/issues"
   },
   "require": {
     "php": ">=5.3.0",
