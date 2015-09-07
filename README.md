@@ -33,8 +33,8 @@ OG Rescrape is available in:
 + English
 
 ## Todo
+- [x] Show link to Linter
 - [ ] Add spinner inside button
-- [ ] Show link to Linter
 
 ## Changelog
 + 0.1.0: First version in repo
