@@ -1,9 +1,17 @@
 .og-rescrape-success {
-	color: #4F8A10;
+	color: #4F8A10 !important;
 	font-weight: 600;
 }
 
 .og-rescrape-failed {
 	color: #D8000C;
 	font-weight: 600;
+}
+
+.og-rescrape-link {
+	font-size: .65rem;
+	color: #bbb;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: .25rem;
 }

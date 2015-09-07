@@ -46,18 +46,6 @@ class Ogrescrape {
 
     }
 
-    public function get_the_post_type() {
-
-        global $post, $typenow, $pagenow;
-
-        if( $post && $post->post_type && (($pagenow == 'post.php') || ($pagenow == 'post-new.php' ))) :
-            $post_type = $post->post_type;
-        else :
-            return false;
-        endif;
-
-        return $post_type;
-    }
 
     # Text domain for translations
     public function plugin_textdomain() {
