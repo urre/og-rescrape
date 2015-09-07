@@ -1,4 +1,4 @@
-=== Open Graph Rescrape===
+=== Open Graph Rescrape ===
 Contributors: urre
 Donate link: hej@urre.me
 Tags: publish, open graph, rescrape, refetch, data, metadata, facebook
@@ -6,7 +6,7 @@ Requires at least: 3.0
 Tested up to: 4.3.0
 Stable tag: 0.1.0
 
-Is Facebook still not updating the Open Graph data for your post/page?
+Click a button in wp-admin to force an Open Graph rescrape.
 
 == Description ==
 
