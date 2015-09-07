@@ -6,8 +6,6 @@ When you share a post/page on Facebook, it scrapes the url for the Open Graph Da
 
 This plugin programatically forces a rescrape. Just click the button in wp-admin.
 
-## In development
-
 ## Install from WordPress Plugin directory
 1. Install plugin from the WordPress Plugin directory (coming soon..)
 
