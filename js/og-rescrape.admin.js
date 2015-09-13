@@ -11,7 +11,7 @@
 			textSuccess: 'Success!',
 			textFailed: 'Failed!'
 		};
-		
+
 		// Add button
 		if(window.location.href.indexOf("post-new") === -1) {
 		$('#edit-slug-box').append('<a class="button button-small button-rescrape">'+settings.textNormal+'</a><a class="og-rescrape-link" target="_blank" href="https://developers.facebook.com/tools/debug/og/object?q='+settings.url+'">Debugger</a>');
@@ -22,11 +22,7 @@
 			var _this = $(this);
 
 			var jqxhr = $.post(
-				'https://graph.facebook.com',
-				{
-					id: settings.url,
-					scrape: true
-				},
+				'https://graph.facebook.com/?id='+settings.url+'&scrape=true',
 				function(response) {
 					
 

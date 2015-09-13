@@ -4,7 +4,7 @@ Donate link: hej@urre.me
 Tags: publish, open graph, rescrape, refetch, data, metadata, facebook
 Requires at least: 3.0
 Tested up to: 4.3.0
-Stable tag: 0.1.0
+Stable tag: 0.2.1
 
 Click a button in wp-admin to force an Open Graph rescrape.
 
@@ -34,6 +34,12 @@ This plugin is available in the following languages:
 * Swedish
 
 == Changelog ==
+
+= 0.2.1 =
+* Minor fix
+
+= 0.2.0 =
+* Bug fixes for scrape request.
 
 = 0.1.0 =
 * First version in repository
