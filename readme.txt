@@ -33,6 +33,10 @@ This plugin is available in the following languages:
 * English
 * Swedish
 
+== Screenshots ==
+
+1. Button in wp-admin
+
 == Changelog ==
 
 = 0.2.1 =
