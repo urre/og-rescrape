@@ -4,12 +4,14 @@
   "description": "Click a button in wp-admin to force an Open Graph rescrape.",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.9.0",
-    "gulp-watch": "^4.3.5"
+    "gulp": "*",
+    "gulp-plumber": "*",
+    "gulp-watch": "*"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "reinstall": " rm -rf node_modules/ && npm i",
+    "start": " gulp serve"
   },
   "repository": {
     "type": "git",

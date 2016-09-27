@@ -1,9 +1,9 @@
 === Open Graph Rescrape ===
 Contributors: urre
-Donate link: hej@urre.me
+Donate link: https://www.paypal.me/urbansanden
 Tags: publish, open graph, rescrape, refetch, data, metadata, facebook
 Requires at least: 3.0
-Tested up to: 4.3.0
+Tested up to: 4.6.1
 Stable tag: 0.2.1
 
 Click a button in wp-admin to force an Open Graph rescrape.
