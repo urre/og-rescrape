@@ -3,13 +3,13 @@
 * Plugin Name: Open Graph Rescrape
 * Plugin URI: http://github.com/urre/ogrescrape
 * Description: This plugin programatically forces a Open Graph rescrape. Just click the button in wp-admin.
-* Version: 0.2.1
+* Version: 0.2.2
 * Author: Urban Sanden
 * Author URI: http://urre.me
 * License: GPL2
 */
 
-/*  Copyright 2015 Urban Sanden (email: hej@urre.me)
+/*  Copyright 2017 Urban Sanden (email: hej@urre.me)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as

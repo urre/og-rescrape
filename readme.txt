@@ -3,8 +3,8 @@ Contributors: urre
 Donate link: https://www.paypal.me/urbansanden
 Tags: publish, open graph, rescrape, refetch, data, metadata, facebook
 Requires at least: 3.0
-Tested up to: 4.6.1
-Stable tag: 0.2.1
+Tested up to: 4.7.1
+Stable tag: 0.2.2
 
 Click a button in wp-admin to force an Open Graph rescrape.
 
@@ -37,6 +37,9 @@ This plugin is available in the following languages:
 1. Button in wp-admin
 
 == Changelog ==
+
+= 0.2.2 =
+* Bug fix for long urls. Namespace JavaScript.
 
 = 0.2.1 =
 * Minor fix

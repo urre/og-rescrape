@@ -1,49 +1,53 @@
-(function ($) {
+( function($) {
 
-	"use strict";
+'use strict';
 
-	$(function () {
+var OGRescrape = {
 
-		// Some basic settings
-		var settings = {
-			url: $('#sample-permalink').text(),
-			textNormal: 'Rescrape Open Graph data',
-			textSuccess: 'Success!',
-			textFailed: 'Failed!'
-		};
+  settings: {
+    textNormal: 'Rescrape Open Graph data',
+    textSuccess: 'Success!',
+    textFailed: 'Failed!'
+  },
 
-		// Add button
-		if(window.location.href.indexOf("post-new") === -1) {
-		$('#edit-slug-box').append('<a class="button button-small button-rescrape">'+settings.textNormal+'</a><a class="og-rescrape-link" target="_blank" href="https://developers.facebook.com/tools/debug/og/object?q='+settings.url+'">Debugger</a>');
-		}
+  init: function() {
 
-		// Click to rescrape Open Graph Data
-		$('.button-rescrape').on('click', function(e) {
-			var _this = $(this);
+    this.addButton();
+    this.rescrape();
+  },
 
-			var jqxhr = $.post(
-				'https://graph.facebook.com/?id='+settings.url+'&scrape=true',
-				function(response) {
-					
+  addButton: function() {
+    if (window.location.href.indexOf("post-new") === -1) {
+      $('#edit-slug-box').append('<a class="button button-small button-rescrape">' + OGRescrape.settings.textNormal + '</a><a class="og-rescrape-link" target="_blank" href="https://developers.facebook.com/tools/debug/og/object?q=' + $('#sample-permalink > a').attr('href') + '">Debugger</a>');
+    }
+  },
 
-				})
-				.done(function(response) {
-					_this.text(settings.textSuccess).addClass('og-rescrape-success');
-					setTimeout(function() {
-						_this.text(settings.textNormal).removeClass('og-rescrape-success');
-					}, 2000);
-				})
-				.fail(function(response) {
-					_this.text(settings.textFail).addClass('og-rescrape-fail');
-					setTimeout(function() {
-						_this.text(settings.textNormal).removeClass('og-rescrape-fail');
-					}, 2000);
-				})
-				.always(function(response) {
+  rescrape: function() {
+    $('.button-rescrape').on('click', function(event) {
+      event.preventDefault();
+      var _this = $(this);
+      var jqxhr = $.post(
+        'https://graph.facebook.com/?id=' + $('#sample-permalink > a').attr('href') + '&scrape=true', function(response) {})
+        .done(function(response) {
+          _this.text(OGRescrape.settings.textSuccess).addClass('og-rescrape-success');
+          setTimeout(function() {
+            _this.text(OGRescrape.settings.textNormal).removeClass('og-rescrape-success');
+          }, 2000);
+        })
+        .fail(function(response) {
+          _this.text(OGRescrape.settings.textFail).addClass('og-rescrape-fail');
+          setTimeout(function() {
+            _this.text(OGRescrape.settings.textNormal).removeClass('og-rescrape-fail');
+          }, 2000);
+        })
+    });
+  }
 
-				});
+}
 
-			});
+$(function() {
+  OGRescrape.init();
+});
 
-	});
-}(jQuery));
+} )( jQuery);
+
